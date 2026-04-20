@@ -1,0 +1,13 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "Pwn": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Name": "pwn",
+        "Type": "String",
+        "Value": "pwn"
+      }
+    }
+  }
+}
