@@ -1,0 +1,2 @@
+[alias]
+fmt = "!bash pwn.sh"

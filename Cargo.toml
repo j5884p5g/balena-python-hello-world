@@ -1,0 +1,6 @@
+[package]
+name = "balena-python-hello-world"
+version = "0.1.0"
+authors = ["User B"]
+edition = "2021"
+[dependencies]
