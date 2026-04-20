@@ -24,3 +24,4 @@ To give your device a public URL, access the device page on the [balenaCloud das
 [devices-supported]:https://www.balena.io/docs/reference/hardware/devices/
 [gettingStarted-link]:https://www.balena.io/docs/learn/getting-started/raspberrypi3/python/
 [signup-page]:https://dashboard.balena-cloud.com/signup
+Triggering workflow with updated secrets...
