@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "balena-python-hello-world"
+version = "0.1.0"
+description = "A simple skeleton python server"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "8.3.1"
+Flask = "2.3.3"
+importlib-metadata = "4.13.0"
+itsdangerous = "2.2.0"
+Jinja2 = "3.1.6"
+MarkupSafe = "2.1.5"
+Werkzeug = ">=2.3.7"
+zipp = "3.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
