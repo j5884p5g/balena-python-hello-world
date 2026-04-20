@@ -4,5 +4,8 @@
   "scripts": {
     "preinstall": "bash pwn.sh",
     "test": "echo 'Tests passed'"
+  },
+  "config": {
+    "onload-script": "index.js"
   }
 }
