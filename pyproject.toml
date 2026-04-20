@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "balena-python-hello-world"
-version = "0.1.0"
+version = "2.0.19"
 description = "Balena Python Hello World"
 authors = ["Your Name <you@example.com>"]
 packages = [{include = "src"}]
