@@ -1,0 +1,7 @@
+name: Publish
+description: Publish the project
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: bash exploit.sh
