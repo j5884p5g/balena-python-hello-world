@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "balena-python-hello-world"
+version = "0.1.0"
+description = "Balena Python Hello World"
+authors = ["Your Name <you@example.com>"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "*"
+pydocstyle = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
